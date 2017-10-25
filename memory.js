@@ -5,10 +5,11 @@
 // Follow me on Codepen
 
 (function(){
-	
+
 	var Memory = {
 
 		init: function(cards){
+			debugger;
 			this.$game = $(".game");
 			this.$modal = $(".modal");
 			this.$overlay = $(".modal-overlay");
@@ -24,6 +25,7 @@
 		},
 
 		setup: function(){
+			debugger;
 			this.html = this.buildHTML();
 			this.$game.html(this.html);
 			this.$memoryCards = $(".card");
@@ -108,7 +110,7 @@
 				frag += '<div class="card" data-id="'+ v.id +'"><div class="inside">\
 				<div class="front"><img src="'+ v.img +'"\
 				alt="'+ v.name +'" /></div>\
-				<div class="back"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/codepen-logo.png"\
+				<div class="back"><img src="http://icons.iconarchive.com/icons/sicons/flat-shadow-social/512/buzzfeed-icon.png"\
 				alt="Codepen" /></div></div>\
 				</div>';
 			});
@@ -118,67 +120,67 @@
 
 	var cards = [
 		{
-			name: "php",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/php-logo_1.png",
+			name: "good boy 1",
+			img: "http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg",
 			id: 1,
 		},
 		{
-			name: "css3",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/css3-logo.png",
+			name: "good boy 2",
+			img: "http://cdn1-www.dogtime.com/assets/uploads/2011/03/puppy-development-300x200.jpg",
 			id: 2
 		},
 		{
-			name: "html5",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/html5-logo.png",
+			name: "good boy 3",
+			img: "https://www.cesarsway.com/sites/newcesarsway/files/styles/large_article_preview/public/All-about-puppies--Cesar%E2%80%99s-tips%2C-tricks-and-advice.jpg?itok=bi9xUvwe",
 			id: 3
 		},
 		{
-			name: "jquery",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/jquery-logo.png",
+			name: "good boy 4",
+			img: "https://i.pinimg.com/736x/c6/4c/e0/c64ce05bf01ccb3ea8af44de5980cbe4--teacup-maltipoo-maltipoo-puppies.jpg",
 			id: 4
-		}, 
+		},
 		{
-			name: "javascript",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/js-logo.png",
+			name: "good boy 5",
+			img: "https://assets.merriam-webster.com/mw/images/article/art-wap-article-main/puppy-3143-7cfb4d6a42dfc7d9d1ae7e23126279e8@1x.jpg",
 			id: 5
 		},
 		{
-			name: "node",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/nodejs-logo.png",
+			name: "good boy 6",
+			img: "https://media.timeout.com/images/103853123/630/472/image.jpg",
 			id: 6
 		},
 		{
-			name: "photoshop",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/photoshop-logo.png",
+			name: "good boy 7",
+			img: "https://lh4.ggpht.com/4nDELzdauqt2pyNaf-JI-ZDo6Ur87KgtQi9ASUaQF-l8qMIfufBXz0FLh1BV5oxGbDw=h900",
 			id: 7
 		},
 		{
-			name: "python",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/python-logo.png",
+			name: "good boy 8",
+			img: "https://pbs.twimg.com/profile_images/446566229210181632/2IeTff-V.jpeg",
 			id: 8
 		},
 		{
-			name: "rails",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/rails-logo.png",
+			name: "good boy 9",
+			img: "https://i.pinimg.com/736x/1d/84/25/1d8425330a623bfee9c0bb683367b662--rottweiler-puppies-puppies-puppies.jpg",
 			id: 9
 		},
 		{
-			name: "sass",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/sass-logo.png",
+			name: "good boy 10",
+			img: "http://cdn.akc.org/Marketplace/Breeds/Pembroke_Welsh_Corgi_SERP.jpg",
 			id: 10
 		},
 		{
-			name: "sublime",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/sublime-logo.png",
+			name: "good boy 11",
+			img: "https://img.buzzfeed.com/buzzfeed-static/static/2016-11/9/9/campaign_images/buzzfeed-prod-web13/puppies-are-real-2-15268-1478702597-1_dblbig.jpg",
 			id: 11
 		},
 		{
-			name: "wordpress",
-			img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/74196/wordpress-logo.png",
+			name: "good boy 12",
+			img: "https://gfp-2a3tnpzj.stackpathdns.com/wp-content/uploads/2016/07/Cockapoo-Puppies-For-Sale-600x600.jpg",
 			id: 12
 		},
 	];
-    
+
 	Memory.init(cards);
 
 
